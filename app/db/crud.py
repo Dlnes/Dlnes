@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from db.models import Category, Book
+from app.db.models import Category, Book
 
 def create_category(db: Session, title: str):
     db_category = Category(title=title)
